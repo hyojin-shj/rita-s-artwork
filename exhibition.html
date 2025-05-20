@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품 - Art Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .card-content {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+            align-items: stretch;
+        }
+        .card-left {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        .card-right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .card-left .card-image {
+            max-width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 섹션 -->
+    <header class="main-header">
+        <a href="index.html" class="header-link">
+            <div class="header-content">
+                <h1>작품</h1>
+            </div>
+        </a>
+    </header>
+
+    <!-- 네비게이션 섹션 -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">Projects</div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">홈</a></li>
+                <li><a href="gallery.html">갤러리</a></li>
+                <li><a href="exhibition.html" class="active">작품</a></li>
+                <li><a href="artists.html">작가</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 섹션 -->
+    <main class="exhibition-main">
+        <section class="exhibition-info">
+            <h2>작품 현황</h2>
+            <div class="card-stack">
+                <div class="card-stack-container">
+                    <article id="spring" class="exhibition-card active">
+                        <div class="card-content">
+                            <div class="card-left">
+                                <img src="images/cheun.png" alt="천공의 이주자들 이미지" class="card-image">
+                            </div>
+                            <div class="card-right">
+                                <h3>천공의 이주자들</h3>
+                                <p class="date">기간: 2023.08.</p>
+                                <p class="category">분류: 네이버 지상최대 공모전</p>
+                                <p class="exhibition-link"><a href="https://comic.naver.com/bestChallenge/list?titleId=810234" target="_blank">네이버 웹툰 바로가기</a></p>
+                                <div class="description-container">
+                                    <p class="description-preview">"더 이상은 여기서 못 살겠어!" 다섯 살이 채 되기 전, 마법사들만의 나라 "하늘섬"으로 이주한 "난"과 가족들. 하지만 난은 이곳에서 사는 게 지긋지긋하기만 하다. 가족들과 마찰 없이 하늘섬을 벗어나는 방법은 오직 "토벌대"에 합류하는 것 뿐. 난은 무사히 입단 시험에 합격해 토벌대에 합류할 수 있을까? 하늘과 미궁을 오가며 자신이 있을 곳을 찾는 성장 로맨스 판타지!</p>
+                                    <button class="expand-button">▼</button>
+                                    <div class="description-full">
+                                        <p>"하늘섬이라는 소재로 이민자성을 부각하며, 세상으로부터 소외된 아이에서 토벌대의 일원으로 성장하는 정통적인 서사를 통해 재미와 감동을 주는 스토리<br>총과 마법이라는 소재의 결합으로 독특한 판타지적 세계관을 구축한다"</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="new" class="exhibition-card next">
+                        <div class="card-content">
+                            <div class="card-left">
+                                <img src="images/an.png" alt="안전지대 이미지" class="card-image">
+                            </div>
+                            <div class="card-right">
+                                <h3>안(온다정무해)전지대</h3>
+                                <p class="date">기간: 2024.04.01 - 2024.05.31</p>
+                                <p class="category">분류: 창작만화</p>
+                                <div class="description-container">
+                                    <p class="description-preview">"야 정신 좀 차려라!!! 현실은 안온다정무해하지 않다!"현대의 정형화된 캐릭터들의 무차별적 생산은 과연 무엇을 위한 것인가</p>
+                                    <button class="expand-button">▼</button>
+                                    <div class="description-full">
+                                        <p>비슷한 소재의 콘텐츠가 계속해서 재생산되는 사회에서 무엇을 어떻게 만들어야 할지 고민하는 창작자들의 혼란스러움을 담았다. <br> 비유적인 제목을 통해 이야기의 의도를 다시 한번 더 확인할 수 있다.</p>
+                                        <p class="exhibition-link"><a href="#" target="_blank">작품 상세 정보</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="card-stack-controls">
+                    <button class="control-button prev-button">이전</button>
+                    <button class="control-button next-button">다음</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 풋터 섹션 -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+
+            </div>
+            <div class="footer-section">
+                <h3>Contact me</h3>
+                <p>about art: gg0602@naver.com</p>
+                <p>about page: dd0802@naver.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SYJ's Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
