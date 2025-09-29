@@ -4,7 +4,7 @@ Html, CSS, JavaScrip를 이용하여 갤러리 형식으로 작품을 소개하�
 🌐 링크
 https://hyojin-shj.github.io/rita-s-artwork/
 
-# 요구사항 정의서
+## 요구사항 정의서
 
 | 구분 | 항목 | 내용 |
 |------|------|------|
@@ -18,18 +18,16 @@ https://hyojin-shj.github.io/rita-s-artwork/
 | **비기능 요구사항** | 보안 | - 해당 없음 (정적 사이트) |
 | **비기능 요구사항** | 확장성 | - 향후 작품을 쉽게 추가하거나 카테고리를 분류할 수 있는 구조 고려 |
 
-# 주요기능
-## 1. 자동 이미지 슬라이더
+## 주요기능
+### 1. 자동 이미지 슬라이더
 Swiper.js 외부 라이브러리를 통하여 내장 기능인 autoplay옵션으로 슬라이딩 시간을 설정
 
-## 2. 인터랙티브 갤러리
+### 2. 인터랙티브 갤러리
 display: grid: grid-template-columns 이용해 작품들 반응형 격자 형태로 정렬
 포트폴리오/자유작품 탭: active, display:none를 통한 탭 구현
+reateElement로 모달창을 동적으로 생성하고(이미지 전체 보기), 키보드/버튼으로 이미지 전환 구현
 
-## 3. 모달
-reateElement로 모달창을 동적으로 생성하고, 키보드/버튼으로 이미지 전환 구현
-
-## 4. 반응형 웹 디자인
+### 3. 반응형 웹 디자인
 레이아웃: @media 쿼리로 화면 너비에 따라 grid-template-columns 값을 변경하여 갤러리 열 개수 자동 조절
 햄버거 메뉴: resize 이벤트로 화면 너비를 감지하고, classList.toggle('active')로 활성 상태 제어
 
